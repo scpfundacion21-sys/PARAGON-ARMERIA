@@ -1,0 +1,520 @@
+/* =========================================
+   PARAGON // STRIKE DIVISION
+   ARMERÍA
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050708;
+    color: #e8eceb;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.header {
+    width: 100%;
+    min-height: 100px;
+    padding: 25px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #263033;
+    background: #080b0d;
+}
+
+
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.brand-main {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+
+.brand-sub {
+    margin-top: 4px;
+    color: #7d898b;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+
+.section-title {
+    color: #aeb8b8;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.arsenal {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+
+.section-header {
+    margin-bottom: 45px;
+    border-left: 3px solid #d4d8d8;
+    padding-left: 20px;
+}
+
+
+.section-code {
+    display: block;
+    margin-bottom: 10px;
+
+    color: #737e80;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+
+.section-header h1 {
+    font-size: clamp(28px, 4vw, 52px);
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+
+.section-header p {
+    margin-top: 12px;
+
+    color: #687375;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   GRID DE ARMAS
+========================================= */
+
+.weapons-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   TARJETA DEL ARMA
+========================================= */
+
+.weapon-card {
+    position: relative;
+
+    min-height: 350px;
+
+    background: #0b0f11;
+
+    border: 1px solid #273033;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.weapon-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #879193;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   IMAGEN DE LA TARJETA
+========================================= */
+
+.weapon-card-image {
+    width: 100%;
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #07090a;
+
+    overflow: hidden;
+}
+
+
+.weapon-card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+
+.weapon-card:hover
+.weapon-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   INFORMACIÓN DE TARJETA
+========================================= */
+
+.weapon-card-info {
+    padding: 20px;
+    border-top: 1px solid #20282a;
+}
+
+
+.weapon-card-code {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #697577;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+.weapon-card-info h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+
+.weapon-card-info p {
+    margin-top: 7px;
+
+    color: #7f898a;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   VENTANA MODAL
+========================================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        rgba(0, 0, 0, 0.82);
+
+    z-index: 1000;
+}
+
+
+.modal.active {
+    display: flex;
+}
+
+
+/* =========================================
+   CONTENIDO DEL MODAL
+========================================= */
+
+.modal-content {
+    position: relative;
+
+    width: min(1100px, 95vw);
+    max-height: 90vh;
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 1fr;
+
+    background: #0a0e10;
+
+    border: 1px solid #394345;
+
+    box-shadow:
+        0 30px 100px rgba(0, 0, 0, 0.7);
+
+    overflow: auto;
+}
+
+
+/* =========================================
+   BOTÓN CERRAR
+========================================= */
+
+.close-button {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid #465154;
+
+    background: #090c0d;
+
+    color: #d9dddd;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: 0.2s ease;
+}
+
+
+.close-button:hover {
+    background: #202628;
+}
+
+
+/* =========================================
+   IMAGEN GRANDE
+========================================= */
+
+.weapon-image-container {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px;
+
+    background: #060809;
+
+    border-right: 1px solid #293133;
+}
+
+
+.weapon-image-container img {
+    width: 100%;
+    max-height: 470px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   INFORMACIÓN DEL ARMA
+========================================= */
+
+.weapon-information {
+    padding: 55px 40px;
+}
+
+
+.weapon-category {
+    color: #737e80;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+.weapon-information h2 {
+    margin-top: 10px;
+    margin-bottom: 35px;
+
+    font-size: 38px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   DATOS
+========================================= */
+
+.data-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 1px;
+
+    background: #293133;
+
+    border: 1px solid #293133;
+}
+
+
+.data-item {
+    min-height: 75px;
+
+    padding: 14px;
+
+    background: #0b0f11;
+}
+
+
+.data-item span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #667173;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+
+.data-item strong {
+    color: #d7dddd;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   ESTADO
+========================================= */
+
+.status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    color: #bfc7c7;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: #aeb8b8;
+
+    box-shadow:
+        0 0 10px rgba(180, 190, 190, 0.5);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+
+    .arsenal {
+        width: 90%;
+        padding: 45px 0;
+    }
+
+
+    .modal-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .weapon-image-container {
+        min-height: 300px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #293133;
+    }
+
+
+    .weapon-information {
+        padding: 35px 25px;
+    }
+
+
+    .weapon-information h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .weapons-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-header h1 {
+        font-size: 27px;
+    }
+
+}
