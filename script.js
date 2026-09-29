@@ -17,7 +17,7 @@ const weapons = [
 
         category: "FUSIL DE ASALTO",
 
-        image: "imagenes/armas/hk416.jpg",
+        image: "HK416.jpeg",
 
         designation: "HK416",
 
