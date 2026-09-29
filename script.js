@@ -81,3 +81,199 @@ const weapons = [
     }
 
 ];
+
+
+/* =========================================
+   ELEMENTOS DEL DOM
+========================================= */
+
+const weaponsGrid = document.getElementById("weaponsGrid");
+
+const weaponModal = document.getElementById("weaponModal");
+const closeModal = document.getElementById("closeModal");
+
+const modalWeaponImage = document.getElementById("modalWeaponImage");
+const modalWeaponCategory = document.getElementById("modalWeaponCategory");
+const modalWeaponName = document.getElementById("modalWeaponName");
+
+const modalDesignation = document.getElementById("modalDesignation");
+const modalCategory = document.getElementById("modalCategory");
+const modalManufacturer = document.getElementById("modalManufacturer");
+const modalCountry = document.getElementById("modalCountry");
+const modalCaliber = document.getElementById("modalCaliber");
+const modalSystem = document.getElementById("modalSystem");
+const modalCapacity = document.getElementById("modalCapacity");
+const modalWeight = document.getElementById("modalWeight");
+
+
+/* =========================================
+   CREAR TARJETAS DE ARMAS
+========================================= */
+
+function createWeaponCards() {
+
+    weaponsGrid.innerHTML = "";
+
+    weapons.forEach((weapon, index) => {
+
+        const card = document.createElement("article");
+
+        card.className = "weapon-card";
+
+        card.innerHTML = `
+            
+            <div class="weapon-card-image">
+
+                <img
+                    src="${weapon.image}"
+                    alt="${weapon.name}"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="weapon-card-info">
+
+                <span class="weapon-number">
+                    ARM // ${String(index + 1).padStart(3, "0")}
+                </span>
+
+                <span class="weapon-category">
+                    ${weapon.category}
+                </span>
+
+                <h2>
+                    ${weapon.name}
+                </h2>
+
+                <p>
+                    ${weapon.manufacturer}
+                </p>
+
+                <button class="weapon-button" data-id="${weapon.id}">
+                    VER INFORMACIÓN
+                </button>
+
+            </div>
+
+        `;
+
+        weaponsGrid.appendChild(card);
+
+    });
+
+}
+
+
+/* =========================================
+   ABRIR INFORMACIÓN DEL ARMA
+========================================= */
+
+function openWeapon(id) {
+
+    const weapon = weapons.find(item => item.id === id);
+
+    if (!weapon) {
+        return;
+    }
+
+    modalWeaponImage.src = weapon.image;
+    modalWeaponImage.alt = weapon.name;
+
+    modalWeaponCategory.textContent = weapon.category;
+    modalWeaponName.textContent = weapon.name;
+
+    modalDesignation.textContent = weapon.designation;
+    modalCategory.textContent = weapon.category;
+    modalManufacturer.textContent = weapon.manufacturer;
+    modalCountry.textContent = weapon.country;
+    modalCaliber.textContent = weapon.caliber;
+    modalSystem.textContent = weapon.system;
+    modalCapacity.textContent = weapon.capacity;
+    modalWeight.textContent = weapon.weight;
+
+    weaponModal.classList.add("active");
+
+    document.body.classList.add("modal-open");
+
+}
+
+
+/* =========================================
+   CERRAR INFORMACIÓN
+========================================= */
+
+function closeWeapon() {
+
+    weaponModal.classList.remove("active");
+
+    document.body.classList.remove("modal-open");
+
+}
+
+
+/* =========================================
+   EVENTOS DE LAS TARJETAS
+========================================= */
+
+weaponsGrid.addEventListener("click", function(event) {
+
+    const button = event.target.closest(".weapon-button");
+
+    if (!button) {
+        return;
+    }
+
+    const weaponId = button.dataset.id;
+
+    openWeapon(weaponId);
+
+});
+
+
+/* =========================================
+   CERRAR MODAL
+========================================= */
+
+closeModal.addEventListener("click", function() {
+
+    closeWeapon();
+
+});
+
+
+/* =========================================
+   CERRAR AL HACER CLICK FUERA
+========================================= */
+
+weaponModal.addEventListener("click", function(event) {
+
+    if (event.target === weaponModal) {
+
+        closeWeapon();
+
+    }
+
+});
+
+
+/* =========================================
+   CERRAR CON ESCAPE
+========================================= */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        closeWeapon();
+
+    }
+
+});
+
+
+/* =========================================
+   INICIALIZAR ARMERÍA
+========================================= */
+
+createWeaponCards();
