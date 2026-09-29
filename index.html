@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PARAGON | ARMERÍA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="header">
+
+        <div class="brand">
+            <span class="brand-main">PARAGON</span>
+            <span class="brand-sub">STRIKE DIVISION</span>
+        </div>
+
+        <div class="section-title">
+            ARMERÍA // ARMAS DISPONIBLES
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main>
+
+        <section class="arsenal">
+
+            <div class="section-header">
+
+                <span class="section-code">
+                    ARM // 001
+                </span>
+
+                <h1>
+                    ARMAS DISPONIBLES
+                </h1>
+
+                <p>
+                    PARAGON SECURE ARMORY DATABASE
+                </p>
+
+            </div>
+
+
+            <!-- AQUÍ APARECERÁN LAS ARMAS -->
+
+            <div id="weaponsGrid" class="weapons-grid"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- VENTANA DE INFORMACIÓN DEL ARMA -->
+
+    <div id="weaponModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-button">
+                ×
+            </button>
+
+
+            <div class="weapon-image-container">
+
+                <img
+                    id="modalWeaponImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="weapon-information">
+
+                <span id="modalWeaponCategory"
+                      class="weapon-category">
+                </span>
+
+                <h2 id="modalWeaponName">
+                </h2>
+
+
+                <div class="data-grid">
+
+                    <div class="data-item">
+                        <span>DESIGNACIÓN</span>
+                        <strong id="modalDesignation"></strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>CATEGORÍA</span>
+                        <strong id="modalCategory"></strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>FABRICANTE</span>
+                        <strong id="modalManufacturer"></strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>PAÍS DE ORIGEN</span>
+                        <strong id="modalCountry"></strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>CALIBRE</span>
+                        <strong id="modalCaliber"></strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>SISTEMA</span>
+                        <strong id="modalSystem"></strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>CAPACIDAD</span>
+                        <strong id="modalCapacity"></strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>PESO</span>
+                        <strong id="modalWeight"></strong>
+                    </div>
+
+                </div>
+
+
+                <div class="status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        DISPONIBLE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
