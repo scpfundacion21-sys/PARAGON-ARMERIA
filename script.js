@@ -36,6 +36,20 @@ const weapons = [
         system: "OPERADO POR GAS",
         capacity: "SEGÚN CONFIGURACIÓN",
         weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "fn-scar-l",
+        name: "FN SCAR-L",
+        category: "FUSIL DE ASALTO",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/FN-SCAR-L.jpeg",
+        designation: "FN SCAR-L",
+        manufacturer: "FN HERSTAL",
+        country: "BÉLGICA",
+        caliber: "5.56×45 mm NATO",
+        system: "OPERADO POR GAS",
+        capacity: "30 CARTUCHOS",
+        weight: "SEGÚN CONFIGURACIÓN"
     }
 
 ];
