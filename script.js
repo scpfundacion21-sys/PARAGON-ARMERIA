@@ -62,7 +62,7 @@ const weapons = [
         country: "BÉLGICA",
         caliber: "7.62×51 mm NATO",
         system: "OPERADO POR GAS",
-        capacity: "SEGÚN CONFIGURACIÓN",
+        capacity: "30 CARTUCHOS",
         weight: "SEGÚN VARIANTE"
     },
 
@@ -78,6 +78,20 @@ const weapons = [
         system: "OPERADO POR GAS",
         capacity: "30 CARTUCHOS",
         weight: "SEGÚN CONFIGURACIÓN"
+    },
+
+    {
+        id: "hk-g36",
+        name: "HK G36",
+        category: "FUSIL DE ASALTO",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/HK-G36.jpeg",
+        designation: "G36",
+        manufacturer: "HECKLER & KOCH",
+        country: "ALEMANIA",
+        caliber: "5.56×45 mm NATO",
+        system: "OPERADO POR GAS",
+        capacity: "30 CARTUCHOS",
+        weight: "SEGÚN VARIANTE"
     }
 
 ];
