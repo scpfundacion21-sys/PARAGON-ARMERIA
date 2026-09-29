@@ -12,25 +12,29 @@ const weapons = [
 
     {
         id: "hk416",
-
         name: "HK416",
-
         category: "FUSIL DE ASALTO",
-
         image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/HK416.jpeg",
-
         designation: "HK416",
-
         manufacturer: "HECKLER & KOCH",
-
         country: "ALEMANIA",
-
         caliber: "5.56×45 mm NATO",
-
         system: "OPERADO POR GAS",
-
         capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
 
+    {
+        id: "sig-mcx",
+        name: "SIG MCX",
+        category: "FUSIL DE ASALTO",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/SIG-MCX.jpeg",
+        designation: "SIG MCX",
+        manufacturer: "SIG SAUER",
+        country: "ESTADOS UNIDOS",
+        caliber: "SEGÚN VARIANTE",
+        system: "OPERADO POR GAS",
+        capacity: "SEGÚN CONFIGURACIÓN",
         weight: "SEGÚN VARIANTE"
     }
 
