@@ -207,7 +207,36 @@ function createWeaponCards() {
 
     weaponsGrid.innerHTML = "";
 
+    let currentCategory = "";
+
     weapons.forEach((weapon, index) => {
+
+
+        /* =========================================
+           TÍTULO DE CATEGORÍA
+        ========================================= */
+
+        if (weapon.category !== currentCategory) {
+
+            currentCategory = weapon.category;
+
+            const categoryTitle = document.createElement("div");
+
+            categoryTitle.className = "weapon-category-title";
+
+            categoryTitle.innerHTML = `
+                <span>
+                    ${currentCategory}
+                </span>
+            `;
+
+            weaponsGrid.appendChild(categoryTitle);
+        }
+
+
+        /* =========================================
+           CREAR TARJETA
+        ========================================= */
 
         const card = document.createElement("article");
 
@@ -243,7 +272,9 @@ function createWeaponCards() {
                     ${weapon.manufacturer}
                 </p>
 
-                <button class="weapon-button" data-id="${weapon.id}">
+                <button
+                    class="weapon-button"
+                    data-id="${weapon.id}">
                     VER INFORMACIÓN
                 </button>
 
