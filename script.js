@@ -17,7 +17,7 @@ const weapons = [
 
         category: "FUSIL DE ASALTO",
 
-        image: "HK416.jpeg",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/HK416.jpeg",
 
         designation: "HK416",
 
