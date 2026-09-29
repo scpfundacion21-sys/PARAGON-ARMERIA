@@ -10,6 +10,10 @@
 
 const weapons = [
 
+    /* =========================================
+       FUSILES DE ASALTO
+    ========================================= */
+
     {
         id: "hk416",
         name: "HK416",
@@ -92,6 +96,81 @@ const weapons = [
         system: "OPERADO POR GAS",
         capacity: "30 CARTUCHOS",
         weight: "SEGÚN VARIANTE"
+    },
+
+
+    /* =========================================
+       FUSILES DE PRECISIÓN
+    ========================================= */
+
+    {
+        id: "axmc",
+        name: "ACCURACY INTERNATIONAL AXMC",
+        category: "FUSIL DE PRECISIÓN",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/AXMC.jpeg",
+        designation: "AXMC",
+        manufacturer: "ACCURACY INTERNATIONAL",
+        country: "REINO UNIDO",
+        caliber: "SEGÚN CONFIGURACIÓN",
+        system: "CERROJO MANUAL",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN CONFIGURACIÓN"
+    },
+
+    {
+        id: "barrett-mrad",
+        name: "BARRETT MRAD",
+        category: "FUSIL DE PRECISIÓN",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/BARRETT-MRAD.jpeg",
+        designation: "MRAD",
+        manufacturer: "BARRETT FIREARMS",
+        country: "ESTADOS UNIDOS",
+        caliber: "SEGÚN CONFIGURACIÓN",
+        system: "CERROJO MANUAL",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN CONFIGURACIÓN"
+    },
+
+    {
+        id: "sig-cross",
+        name: "SIG SAUER CROSS",
+        category: "FUSIL DE PRECISIÓN",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/SIG-CROSS.jpeg",
+        designation: "CROSS",
+        manufacturer: "SIG SAUER",
+        country: "ESTADOS UNIDOS",
+        caliber: "SEGÚN CONFIGURACIÓN",
+        system: "CERROJO MANUAL",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN CONFIGURACIÓN"
+    },
+
+    {
+        id: "hk417",
+        name: "HK417",
+        category: "FUSIL DE PRECISIÓN",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/HK417.jpeg",
+        designation: "HK417",
+        manufacturer: "HECKLER & KOCH",
+        country: "ALEMANIA",
+        caliber: "7.62×51 mm NATO",
+        system: "OPERADO POR GAS",
+        capacity: "20 CARTUCHOS",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "cheytac-m200",
+        name: "CHEYTAC M200",
+        category: "FUSIL DE PRECISIÓN",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/CHEYTAC-M200.jpeg",
+        designation: "M200 INTERVENTION",
+        manufacturer: "CHEYTAC USA",
+        country: "ESTADOS UNIDOS",
+        caliber: ".408 CHEYTAC",
+        system: "CERROJO MANUAL",
+        capacity: "7 CARTUCHOS",
+        weight: "SEGÚN CONFIGURACIÓN"
     }
 
 ];
