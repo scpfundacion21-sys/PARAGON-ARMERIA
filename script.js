@@ -67,7 +67,7 @@ const weapons = [
         caliber: "7.62×51 mm NATO",
         system: "OPERADO POR GAS",
         capacity: "30 CARTUCHOS",
-        weight: "SEGÚN VARIANTE"
+        weight: "SEGÚN CONFIGURACIÓN"
     },
 
     {
@@ -171,6 +171,250 @@ const weapons = [
         system: "CERROJO MANUAL",
         capacity: "7 CARTUCHOS",
         weight: "SEGÚN CONFIGURACIÓN"
+    },
+
+
+    /* =========================================
+       SUBFUSILES / PDW
+    ========================================= */
+
+    {
+        id: "mp5",
+        name: "MP5",
+        category: "SUBFUSIL / PDW",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/MP5.jpeg",
+        designation: "MP5",
+        manufacturer: "HECKLER & KOCH",
+        country: "ALEMANIA",
+        caliber: "9×19 mm",
+        system: "RETROCESO RETARDADO",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "mp7",
+        name: "MP7",
+        category: "SUBFUSIL / PDW",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/MP7.jpeg",
+        designation: "MP7",
+        manufacturer: "HECKLER & KOCH",
+        country: "ALEMANIA",
+        caliber: "4.6×30 mm",
+        system: "OPERADO POR GAS",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "p90",
+        name: "P90",
+        category: "SUBFUSIL / PDW",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/P90.jpeg",
+        designation: "P90",
+        manufacturer: "FN HERSTAL",
+        country: "BÉLGICA",
+        caliber: "5.7×28 mm",
+        system: "OPERADO POR GAS",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "sig-mpx",
+        name: "SIG MPX",
+        category: "SUBFUSIL / PDW",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/SIG-MPX.jpeg",
+        designation: "SIG MPX",
+        manufacturer: "SIG SAUER",
+        country: "ESTADOS UNIDOS",
+        caliber: "9×19 mm",
+        system: "OPERADO POR GAS",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "apc9",
+        name: "APC9",
+        category: "SUBFUSIL / PDW",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/APC9.jpeg",
+        designation: "APC9",
+        manufacturer: "B&T",
+        country: "SUIZA",
+        caliber: "9×19 mm",
+        system: "OPERADO POR RETROCESO",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+
+    /* =========================================
+       AMETRALLADORAS
+    ========================================= */
+
+    {
+        id: "fn-minimi-m249",
+        name: "FN MINIMI / M249",
+        category: "AMETRALLADORA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/FN-MINIMI-M249.jpeg",
+        designation: "MINIMI / M249",
+        manufacturer: "FN HERSTAL",
+        country: "BÉLGICA / ESTADOS UNIDOS",
+        caliber: "5.56×45 mm NATO",
+        system: "OPERADO POR GAS",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "fn-mag",
+        name: "FN MAG",
+        category: "AMETRALLADORA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/FN-MAG.jpeg",
+        designation: "FN MAG",
+        manufacturer: "FN HERSTAL",
+        country: "BÉLGICA",
+        caliber: "7.62×51 mm NATO",
+        system: "OPERADO POR GAS",
+        capacity: "CINTA",
+        weight: "SEGÚN CONFIGURACIÓN"
+    },
+
+    {
+        id: "hk-mg5",
+        name: "HK MG5",
+        category: "AMETRALLADORA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/HK-MG5.jpeg",
+        designation: "MG5",
+        manufacturer: "HECKLER & KOCH",
+        country: "ALEMANIA",
+        caliber: "7.62×51 mm NATO",
+        system: "OPERADO POR GAS",
+        capacity: "CINTA",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "m240",
+        name: "M240",
+        category: "AMETRALLADORA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/M240.jpeg",
+        designation: "M240",
+        manufacturer: "FN HERSTAL",
+        country: "BÉLGICA / ESTADOS UNIDOS",
+        caliber: "7.62×51 mm NATO",
+        system: "OPERADO POR GAS",
+        capacity: "CINTA",
+        weight: "SEGÚN VARIANTE"
+    },
+
+
+    /* =========================================
+       ESCOPETAS
+    ========================================= */
+
+    {
+        id: "benelli-m4",
+        name: "BENELLI M4",
+        category: "ESCOPETA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/BENELLI-M4.jpeg",
+        designation: "M4",
+        manufacturer: "BENELLI",
+        country: "ITALIA",
+        caliber: "12 GA",
+        system: "SEMIAUTOMÁTICA",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "mossberg-590",
+        name: "MOSSBERG 590",
+        category: "ESCOPETA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/MOSSBERG-590.jpeg",
+        designation: "590",
+        manufacturer: "MOSSBERG",
+        country: "ESTADOS UNIDOS",
+        caliber: "12 GA",
+        system: "ACCIÓN DE BOMBA",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "remington-870",
+        name: "REMINGTON 870",
+        category: "ESCOPETA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/REMINGTON-870.jpeg",
+        designation: "870",
+        manufacturer: "REMINGTON",
+        country: "ESTADOS UNIDOS",
+        caliber: "12 GA",
+        system: "ACCIÓN DE BOMBA",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+
+    /* =========================================
+       PISTOLAS
+    ========================================= */
+
+    {
+        id: "glock-17",
+        name: "GLOCK 17",
+        category: "PISTOLA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/GLOCK-17.jpeg",
+        designation: "GLOCK 17",
+        manufacturer: "GLOCK",
+        country: "AUSTRIA",
+        caliber: "9×19 mm",
+        system: "SEMIAUTOMÁTICA",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "glock-19",
+        name: "GLOCK 19",
+        category: "PISTOLA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/GLOCK-19.jpeg",
+        designation: "GLOCK 19",
+        manufacturer: "GLOCK",
+        country: "AUSTRIA",
+        caliber: "9×19 mm",
+        system: "SEMIAUTOMÁTICA",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "sig-p320",
+        name: "SIG SAUER P320",
+        category: "PISTOLA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/SIG-P320.jpeg",
+        designation: "P320",
+        manufacturer: "SIG SAUER",
+        country: "ESTADOS UNIDOS",
+        caliber: "9×19 mm",
+        system: "SEMIAUTOMÁTICA",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
+    },
+
+    {
+        id: "hk-vp9",
+        name: "HK VP9",
+        category: "PISTOLA",
+        image: "https://scpfundacion21-sys.github.io/PARAGON-ARMERIA/HK-VP9.jpeg",
+        designation: "VP9",
+        manufacturer: "HECKLER & KOCH",
+        country: "ALEMANIA",
+        caliber: "9×19 mm",
+        system: "SEMIAUTOMÁTICA",
+        capacity: "SEGÚN CONFIGURACIÓN",
+        weight: "SEGÚN VARIANTE"
     }
 
 ];
