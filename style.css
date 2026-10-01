@@ -34,12 +34,10 @@ body {
     background: #080b0d;
 }
 
-
 .brand {
     display: flex;
     flex-direction: column;
 }
-
 
 .brand-main {
     font-size: 30px;
@@ -47,14 +45,12 @@ body {
     letter-spacing: 5px;
 }
 
-
 .brand-sub {
     margin-top: 4px;
     color: #7d898b;
     font-size: 11px;
     letter-spacing: 4px;
 }
-
 
 .section-title {
     color: #aeb8b8;
@@ -73,13 +69,11 @@ body {
     padding: 70px 0;
 }
 
-
 .section-header {
     margin-bottom: 45px;
     border-left: 3px solid #d4d8d8;
     padding-left: 20px;
 }
-
 
 .section-code {
     display: block;
@@ -90,13 +84,11 @@ body {
     letter-spacing: 3px;
 }
 
-
 .section-header h1 {
     font-size: clamp(28px, 4vw, 52px);
     letter-spacing: 4px;
     font-weight: 700;
 }
-
 
 .section-header p {
     margin-top: 12px;
@@ -167,7 +159,6 @@ body {
         box-shadow 0.3s ease;
 }
 
-
 .weapon-card:hover {
     transform: translateY(-5px);
 
@@ -195,7 +186,6 @@ body {
     overflow: hidden;
 }
 
-
 .weapon-card-image img {
     width: 100%;
     height: 100%;
@@ -204,7 +194,6 @@ body {
 
     transition: transform 0.4s ease;
 }
-
 
 .weapon-card:hover
 .weapon-card-image img {
@@ -224,7 +213,6 @@ body {
     border-top: 1px solid #d5d5d5;
 }
 
-
 .weapon-card-code {
     display: block;
 
@@ -236,14 +224,12 @@ body {
     letter-spacing: 2px;
 }
 
-
 .weapon-card-info h2 {
     font-size: 22px;
     letter-spacing: 2px;
 
     color: #111111;
 }
-
 
 .weapon-card-info p {
     margin-top: 7px;
@@ -256,7 +242,7 @@ body {
 
 
 /* =========================================
-   CATEGORÍA DENTRO DE LA TARJETA
+   CATEGORÍA
 ========================================= */
 
 .weapon-category {
@@ -291,7 +277,6 @@ body {
     transition: 0.2s ease;
 }
 
-
 .weapon-button:hover {
     background: #333333;
 }
@@ -318,7 +303,6 @@ body {
 
     z-index: 1000;
 }
-
 
 .modal.active {
     display: flex;
@@ -379,14 +363,14 @@ body {
     transition: 0.2s ease;
 }
 
-
 .close-button:hover {
     background: #202628;
 }
 
 
 /* =========================================
-   IMAGEN GRANDE
+   IMAGEN GRANDE DEL MODAL
+   SOLO ESTA PARTE ES BLANCA
 ========================================= */
 
 .weapon-image-container {
@@ -398,11 +382,10 @@ body {
 
     padding: 45px;
 
-    background: #060809;
+    background: #ffffff;
 
     border-right: 1px solid #293133;
 }
-
 
 .weapon-image-container img {
     width: 100%;
@@ -414,14 +397,16 @@ body {
 
 /* =========================================
    INFORMACIÓN DEL ARMA
+   ESTA PARTE SE MANTIENE NEGRA
 ========================================= */
 
 .weapon-information {
     padding: 55px 40px;
+
+    background: #0a0e10;
 }
 
-
-.weapon-category {
+.weapon-information .weapon-category {
     color: #737e80;
 
     font-size: 11px;
@@ -429,10 +414,11 @@ body {
     letter-spacing: 3px;
 }
 
-
 .weapon-information h2 {
     margin-top: 10px;
     margin-bottom: 35px;
+
+    color: #e8eceb;
 
     font-size: 38px;
 
@@ -457,7 +443,6 @@ body {
     border: 1px solid #293133;
 }
 
-
 .data-item {
     min-height: 75px;
 
@@ -465,7 +450,6 @@ body {
 
     background: #0b0f11;
 }
-
 
 .data-item span {
     display: block;
@@ -478,7 +462,6 @@ body {
 
     letter-spacing: 2px;
 }
-
 
 .data-item strong {
     color: #d7dddd;
@@ -509,7 +492,6 @@ body {
     letter-spacing: 2px;
 }
 
-
 .status-dot {
     width: 8px;
     height: 8px;
@@ -533,22 +515,21 @@ body {
 
     .header {
         padding: 20px;
+
         flex-direction: column;
         align-items: flex-start;
+
         gap: 15px;
     }
-
 
     .arsenal {
         width: 90%;
         padding: 45px 0;
     }
 
-
     .modal-content {
         grid-template-columns: 1fr;
     }
-
 
     .weapon-image-container {
         min-height: 300px;
@@ -558,16 +539,13 @@ body {
         border-bottom: 1px solid #293133;
     }
 
-
     .weapon-information {
         padding: 35px 25px;
     }
 
-
     .weapon-information h2 {
         font-size: 30px;
     }
-
 }
 
 
@@ -577,14 +555,11 @@ body {
         grid-template-columns: 1fr;
     }
 
-
     .data-grid {
         grid-template-columns: 1fr;
     }
 
-
     .section-header h1 {
         font-size: 27px;
     }
-
 }
