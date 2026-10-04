@@ -2,34 +2,31 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PARAGON | ARMERÍA</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>PARAGON // ARMORY</title>
 
     <link rel="stylesheet" href="style.css">
 
     <style>
-
-        /* =========================
-           FLECHA VOLVER
-        ========================== */
 
         .back-arrow {
             position: fixed;
             top: 25px;
             left: 25px;
             z-index: 9999;
-
             color: #ffffff;
             text-decoration: none;
-
             font-size: 38px;
             font-family: Arial, sans-serif;
             font-weight: normal;
-
             line-height: 1;
-
             transition: 0.2s ease;
         }
 
@@ -42,154 +39,329 @@
 
 </head>
 
+
 <body>
 
-    <!-- =========================
-         FLECHA REGRESAR
-    ========================== -->
 
-    <a
-        href="https://scpfundacion21-sys.github.io/PARAGON-STRIKE-DIVISION/"
-        class="back-arrow"
-        aria-label="Volver"
+<a
+    href="https://scpfundacion21-sys.github.io/PARAGON-STRIKE-DIVISION/"
+    class="back-arrow"
+    aria-label="Volver"
+>
+    ←
+</a>
+
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <span class="brand-mark">P</span>
+
+        <div>
+
+            <h1>PARAGON</h1>
+
+            <span>
+                STRIKE DIVISION
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="status">
+
+        <span class="status-dot"></span>
+
+        SYSTEM ONLINE
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                PARAGON ARMORY DATABASE
+            </span>
+
+            <h2>
+                WEAPON<br>
+                SYSTEMS
+            </h2>
+
+            <p>
+                Sistemas de armamento organizados
+                para configuración táctica.
+            </p>
+
+            <a
+                href="#weapons"
+                class="enter-button"
+            >
+                ENTER ARMORY
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section
+        id="weapons"
+        class="systems"
     >
-        ←
-    </a>
 
+        <section class="system-section">
 
-    <!-- ENCABEZADO -->
+            <div class="system-header">
 
-    <header class="header">
+                <div>
 
-        <div class="brand">
-            <span class="brand-main">PARAGON</span>
-            <span class="brand-sub">STRIKE DIVISION</span>
-        </div>
+                    <span class="system-number">
+                        SYSTEM 01
+                    </span>
 
-        <div class="section-title">
-            ARMERÍA // ARMAS DISPONIBLES
-        </div>
+                    <h2>
+                        PRIMARY WEAPON SYSTEMS
+                    </h2>
 
-    </header>
-
-
-    <!-- CONTENIDO PRINCIPAL -->
-
-    <main>
-
-        <section class="arsenal">
-
-            <div class="section-header">
-
-                <span class="section-code">
-                    ARM // 001
-                </span>
-
-                <h1>
-                    ARMAS DISPONIBLES
-                </h1>
-
-                <p>
-                    PARAGON SECURE ARMORY DATABASE
-                </p>
-
-            </div>
-
-
-            <!-- AQUÍ APARECERÁN LAS ARMAS -->
-
-            <div id="weaponsGrid" class="weapons-grid"></div>
-
-        </section>
-
-    </main>
-
-
-    <!-- VENTANA DE INFORMACIÓN DEL ARMA -->
-
-    <div id="weaponModal" class="modal">
-
-        <div class="modal-content">
-
-            <button id="closeModal" class="close-button">
-                ×
-            </button>
-
-
-            <div class="weapon-image-container">
-
-                <img
-                    id="modalWeaponImage"
-                    src=""
-                    alt=""
-                >
-
-            </div>
-
-
-            <div class="weapon-information">
-
-                <span
-                    id="modalWeaponCategory"
-                    class="weapon-category">
-                </span>
-
-                <h2 id="modalWeaponName">
-                </h2>
-
-
-                <div class="data-grid">
-
-                    <div class="data-item">
-                        <span>DESIGNACIÓN</span>
-                        <strong id="modalDesignation"></strong>
-                    </div>
-
-                    <div class="data-item">
-                        <span>CATEGORÍA</span>
-                        <strong id="modalCategory"></strong>
-                    </div>
-
-                    <div class="data-item">
-                        <span>FABRICANTE</span>
-                        <strong id="modalManufacturer"></strong>
-                    </div>
-
-                    <div class="data-item">
-                        <span>PAÍS DE ORIGEN</span>
-                        <strong id="modalCountry"></strong>
-                    </div>
-
-                    <div class="data-item">
-                        <span>CALIBRE</span>
-                        <strong id="modalCaliber"></strong>
-                    </div>
-
-                    <div class="data-item">
-                        <span>SISTEMA</span>
-                        <strong id="modalSystem"></strong>
-                    </div>
-
-                    <div class="data-item">
-                        <span>CAPACIDAD</span>
-                        <strong id="modalCapacity"></strong>
-                    </div>
-
-                    <div class="data-item">
-                        <span>PESO</span>
-                        <strong id="modalWeight"></strong>
-                    </div>
+                    <p>
+                        Plataformas principales de
+                        armamento.
+                    </p>
 
                 </div>
 
 
-                <div class="status">
+                <span class="system-code">
+                    WPN // 01
+                </span>
 
-                    <span class="status-dot"></span>
+            </div>
 
-                    <span>
-                        DISPONIBLE
+
+            <div
+                class="product-grid"
+                id="primary-weapons"
+            ></div>
+
+        </section>
+
+
+        <div class="system-divider">
+
+            <span>
+                PARAGON // SYSTEM SEPARATION
+            </span>
+
+        </div>
+
+
+        <section class="system-section">
+
+            <div class="system-header">
+
+                <div>
+
+                    <span class="system-number">
+                        SYSTEM 02
                     </span>
+
+                    <h2>
+                        SECONDARY WEAPON SYSTEMS
+                    </h2>
+
+                    <p>
+                        Sistemas secundarios de
+                        configuración.
+                    </p>
+
+                </div>
+
+
+                <span class="system-code">
+                    WPN // 02
+                </span>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="secondary-weapons"
+            ></div>
+
+        </section>
+
+
+        <div class="system-divider">
+
+            <span>
+                PARAGON // SYSTEM SEPARATION
+            </span>
+
+        </div>
+
+
+        <section class="system-section">
+
+            <div class="system-header">
+
+                <div>
+
+                    <span class="system-number">
+                        SYSTEM 03
+                    </span>
+
+                    <h2>
+                        SUPPORT SYSTEMS
+                    </h2>
+
+                    <p>
+                        Equipamiento complementario
+                        para configuración.
+                    </p>
+
+                </div>
+
+
+                <span class="system-code">
+                    WPN // 03
+                </span>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="support-weapons"
+            ></div>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<div
+    class="modal"
+    id="productModal"
+>
+
+    <div class="modal-box">
+
+        <button
+            class="modal-close"
+            onclick="closeProduct()"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-content">
+
+            <div
+                class="modal-images"
+                id="modalImages"
+            ></div>
+
+
+            <div class="modal-info">
+
+                <span id="modalCategory"></span>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+
+                <div class="technical-data">
+
+                    <div>
+
+                        <span>
+                            TYPE
+                        </span>
+
+                        <strong
+                            id="modalType"
+                        ></strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            MATERIAL
+                        </span>
+
+                        <strong
+                            id="modalMaterial"
+                        ></strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            SYSTEM
+                        </span>
+
+                        <strong
+                            id="modalSystem"
+                        ></strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            FUNCTION
+                        </span>
+
+                        <strong
+                            id="modalFunction"
+                        ></strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            COMPATIBILITY
+                        </span>
+
+                        <strong
+                            id="modalCompatibility"
+                        ></strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            CONFIGURATION
+                        </span>
+
+                        <strong
+                            id="modalConfiguration"
+                        ></strong>
+
+                    </div>
 
                 </div>
 
@@ -199,8 +371,24 @@
 
     </div>
 
+</div>
 
-    <script src="script.js?v=2"></script>
+
+<footer>
+
+    <div>
+        PARAGON STRIKE DIVISION
+    </div>
+
+    <span>
+        PRIVATE EQUIPMENT DATABASE
+    </span>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 
 </body>
 
